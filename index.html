@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Universe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 min-h-screen overflow-x-hidden">
+<div id="particles-container" class="fixed inset-0 overflow-hidden"></div>
+
+<div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12 sm:px-6 lg:px-8">
+    <div class="w-full max-w-4xl mx-auto text-center">
+        <!-- Floating animated logo -->
+        <div class="floating mb-12">
+            <div class="relative inline-block">
+                <div class="absolute -inset-4 bg-blue-500 rounded-full blur-xl opacity-30"></div>
+                <div class="relative flex items-center justify-center w-32 h-32 mx-auto bg-white rounded-full shadow-2xl">
+                    <i class="fas fa-rocket text-5xl gradient-text"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main heading with gradient text -->
+        <h1 class="text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl mb-6">
+            <span class="gradient-text">Welcome Aboard</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="max-w-2xl mx-auto mt-6 text-xl text-gray-300">
+            We're thrilled to have you here. Get ready to embark on an extraordinary journey with us.
+        </p>
+
+        <!-- Animated buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mt-12">
+            <button id="cta-button" class="relative px-8 py-4 text-lg font-medium text-white transition-all duration-300 transform bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                <span class="relative z-10">Get Started</span>
+                <span class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 bg-gradient-to-r from-blue-500 to-purple-600 transition-opacity duration-300"></span>
+            </button>
+
+            <button class="px-8 py-4 text-lg font-medium text-white transition-all duration-300 transform border-2 border-gray-600 rounded-full hover:bg-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                Learn More
+            </button>
+        </div>
+
+        <!-- Feature grid -->
+        <div class="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-3">
+            <div class="p-6 transition-all duration-300 bg-gray-800 bg-opacity-50 rounded-xl hover:bg-opacity-70 hover:shadow-lg hover:-translate-y-2">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-blue-500 rounded-full">
+                    <i class="text-2xl text-white fas fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white">Lightning Fast</h3>
+                <p class="mt-2 text-gray-400">Experience unparalleled speed and performance.</p>
+            </div>
+
+            <div class="p-6 transition-all duration-300 bg-gray-800 bg-opacity-50 rounded-xl hover:bg-opacity-70 hover:shadow-lg hover:-translate-y-2">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-purple-500 rounded-full">
+                    <i class="text-2xl text-white fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white">Secure</h3>
+                <p class="mt-2 text-gray-400">Your data is protected with enterprise-grade security.</p>
+            </div>
+
+            <div class="p-6 transition-all duration-300 bg-gray-800 bg-opacity-50 rounded-xl hover:bg-opacity-70 hover:shadow-lg hover:-translate-y-2">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-pink-500 rounded-full">
+                    <i class="text-2xl text-white fas fa-heart"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white">Loved by Many</h3>
+                <p class="mt-2 text-gray-400">Join our community of satisfied users worldwide.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Floating animated elements -->
+<div class="fixed top-1/4 left-1/4 w-8 h-8 rounded-full bg-blue-400 opacity-20 floating" style="animation-delay: 0.5s;"></div>
+<div class="fixed top-1/3 right-1/4 w-12 h-12 rounded-full bg-purple-400 opacity-20 floating" style="animation-delay: 1s;"></div>
+<div class="fixed bottom-1/4 left-1/3 w-10 h-10 rounded-full bg-pink-400 opacity-20 floating" style="animation-delay: 1.5s;"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
